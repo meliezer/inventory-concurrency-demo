@@ -39,3 +39,20 @@ docker run --name inventory-db \
   -e POSTGRES_DB=inventory \
   -p 5432:5432 \
   -d postgres:15
+```
+
+## Related DevSecOps Showcase
+
+This project focuses on concurrency control at the application level.
+
+A complementary project demonstrates how the same service can be integrated into a production-style DevSecOps workflow using GitLab CI/CD:
+
+👉 https://gitlab.com/menashe.eliezer/inventory-concurrency-devsecops-showcase
+
+The GitLab showcase includes:
+- Full CI/CD pipeline (build, test, security, container)
+- PostgreSQL-backed integration testing in CI
+- AI-assisted merge request review with automated feedback
+- Documented design decisions and trade-offs
+
+Together, these projects illustrate both **correct concurrent backend design** and **modern DevSecOps practices**.
